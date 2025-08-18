@@ -7,27 +7,57 @@ import jewelryCollection from "@/assets/jewelry-collection.jpg";
 const products = [
   {
     id: 1,
-    name: "Rose Gold Stacking Rings",
-    price: "₹599",
-    originalPrice: "₹899",
-    image: stackingRings,
-    category: "Rings"
+    name: "Crystal Charm Necklace",
+    price: "₹750",
+    originalPrice: "₹950",
+    image: chainNecklace,
+    category: "Necklaces",
+    description: "Stainless steel, premium necklace"
   },
   {
     id: 2,
-    name: "Delicate Chain Necklace",
-    price: "₹799",
-    originalPrice: "₹1199",
-    image: chainNecklace,
-    category: "Necklaces"
+    name: "Heart Pearl Necklace",
+    price: "₹350",
+    originalPrice: "₹499",
+    image: jewelryCollection,
+    category: "Necklaces",
+    description: "Stainless steel, alloy"
   },
   {
     id: 3,
-    name: "Luxury Collection Set",
-    price: "₹1599",
-    originalPrice: "₹1999",
+    name: "Vintage Blue Necklace",
+    price: "₹350",
+    originalPrice: "₹499",
+    image: stackingRings,
+    category: "Necklaces",
+    description: "Stainless steel, 18k gold plated"
+  },
+  {
+    id: 4,
+    name: "Wave Elegant Necklace",
+    price: "₹390",
+    originalPrice: "₹590",
+    image: chainNecklace,
+    category: "Necklaces",
+    description: "Stainless steel, 18k gold plated"
+  },
+  {
+    id: 5,
+    name: "Cherry Necklace",
+    price: "₹250",
+    originalPrice: "₹399",
     image: jewelryCollection,
-    category: "Sets"
+    category: "Necklaces",
+    description: "Stainless steel"
+  },
+  {
+    id: 6,
+    name: "Bow Necklace Gold",
+    price: "₹230",
+    originalPrice: "₹349",
+    image: stackingRings,
+    category: "Necklaces",
+    description: "Stainless steel, 18k gold plated"
   }
 ];
 
