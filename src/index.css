@@ -9,32 +9,48 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 15 30% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 20 15% 95%;
+    --secondary-foreground: 0 0% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 15 10% 97%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 15 30% 60%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 15 10% 92%;
+    --input: 15 10% 97%;
+    --ring: 15 30% 60%;
+
+    /* Luxury Rose Gold Theme */
+    --rose-gold: 15 30% 60%;
+    --rose-gold-light: 15 35% 75%;
+    --rose-gold-dark: 15 25% 45%;
+    --champagne: 40 25% 94%;
+    --luxury-text: 0 0% 15%;
+    --luxury-accent: 15 20% 85%;
+    
+    /* Gradients */
+    --gradient-rose: linear-gradient(135deg, hsl(var(--rose-gold-light)), hsl(var(--rose-gold)));
+    --gradient-luxury: linear-gradient(180deg, hsl(var(--background)), hsl(var(--champagne)));
+    
+    /* Shadows */
+    --shadow-luxury: 0 10px 40px -15px hsl(var(--rose-gold) / 0.2);
+    --shadow-elegant: 0 4px 20px -8px hsl(var(--rose-gold) / 0.15);
 
     --radius: 0.5rem;
 
@@ -100,6 +116,37 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  .font-luxury {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .text-luxury {
+    color: hsl(var(--luxury-text));
+  }
+  
+  .bg-rose-gold {
+    background: hsl(var(--rose-gold));
+  }
+  
+  .text-rose-gold {
+    color: hsl(var(--rose-gold));
+  }
+  
+  .shadow-luxury {
+    box-shadow: var(--shadow-luxury);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
